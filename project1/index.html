@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>jQuery Boilerplate</title>
+    <title>Contact Us</title>
     <!-- add stylesheet -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -13,7 +13,44 @@
   </head>
   <body>
 
-    <h1>jQuery Boilerplate!</h1>
+    <h1>Contact Us!</h1>
+
+<fieldset id="personal_info">
+  <h3>Personal Information</h3>
+  <label for="user_name">Name: </label><input id="user_name" type="text" name="name" value="" placeholder="What is your name?" />
+  <label for="user_email">Email: </label><input id="user_email" type="email" name="name" value="" placeholder="you@somewhere.net" />
+</fieldset>
+<fieldset id="inquiry">
+  <h3>Inquiry</h3>
+  <label for="user_request"></label><textarea id="user_request" name="name" rows="8" cols="40" placeholder="What are you inquiring about?"></textarea>
+</fieldset>
+<fieldset id="systems">
+  <p>
+    Please indicate what systems you have owned in the past:
+  </p>
+  <input id="user_system_IBM" type="checkbox" name="IBM" value="" /><label for="">IBM</label><br>
+  <input id="user_system_Commodore" type="checkbox" name="Commodore" value="" /><label for="">Commodore</label><br>
+  <input id="user_system_Radioshack" type="checkbox" name="Radioshack" value="" /><label for="">Radioshack (Tandy)</label><br>
+  <input id="user_system_Rockwell" type="checkbox" name="Rockwell" value="" /><label for="">Rockwell</label><br>
+  <input id="user_system_Apple" type="checkbox" name="Apple" value="" /><label for="">Apple</label><br>
+  <input id="user_system_RCA" type="checkbox" name="RCA" value="" /><label for="">RCA</label><br>
+  <input id="user_system_Intel" type="checkbox" name="Intel" value="" /><label for="">Intel</label><br>
+  <input id="user_system_Atari" type="checkbox" name="Atari" value="" /><label for="">Atari</label><br>
+  <input id="user_system_Amiga" type="checkbox" name="Amiga" value="" /><label for="">Amiga</label><br>
+  <input id="user_system_Bell_Howell" type="checkbox" name="Bell &amp; Howell" value="" /><label for="">Bell &amp; Howell</label><br>
+  <input id="user_system_Osborne" type="checkbox" name="Osborne" value="" /><label for="">Osborne</label><br>
+  <input id="user_system_Xerox" type="checkbox" name="Xerox" value="" /><label for="">Xerox</label><br>
+  <input id="user_system_Zenith" type="checkbox" name="Zenith" value="" /><label for="">Zenith</label><br>
+  <input id="user_system_Data_General" type="checkbox" name="Zenith" value="" /><label for="">Data General</label><br>
+  <label for="user_system_other">Other: </label><input id="user_system_other" type="text" name="name" value="">
+</fieldset>
+<fieldset>
+  <p>
+    Sign up for newsletters about vintage computers and rebuild projects?
+  </p>
+<input id="user_opt_in" type="checkbox" name="opt-in" value="" checked><label for="user_opt_in">Yes!</label>
+</fieldset>
+  <input id="form_send" type="submit" name="submit" value="Contact us now!" />
 
   </body>
 </html>
