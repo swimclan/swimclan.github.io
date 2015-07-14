@@ -26,7 +26,7 @@
 /* SASS VARIABLES */
 $heading-font: 'Commodore Pixelized', serif;
 $heading1: 2.5rem;
-$heading2: 2rem;
+$heading2: 2.3rem;
 $nav: 1.5rem;
 
 $thin-border: 1px solid #666;
@@ -71,6 +71,11 @@ h1 {
 
 h2 {
   font-size: $heading2;
+  margin: 20px 0 20px 0;
+}
+
+h3 {
+
 }
 
 header {
@@ -165,14 +170,14 @@ nav li {
 }
 
 #people {
-  width: 90%;
   margin: 0 auto;
-  text-align: center;
+  width: 90%;
+  padding-left: 4%;
 }
 
 .person {
   float: left;
-  margin: 20px;
+  margin: 1%;
   border-radius: 100%;
 }
 
