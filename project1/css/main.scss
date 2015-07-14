@@ -1,0 +1,181 @@
+/* GLOBAL STUFF */
+@font-face {
+    font-family: 'Commodore Pixelized';
+    src: url('../fonts/Commodore Pixelized.ttf') format('truetype');
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/* SASS VARIABLES */
+$heading-font: 'Commodore Pixelized', serif;
+$heading1: 2.5rem;
+$heading2: 2rem;
+$nav: 1.5rem;
+
+$thin-border: 1px solid #666;
+
+$primary-site-color: rgb(86, 78, 179);
+
+$primary-button-bg-color: rgb(78, 79, 61);
+$primary-button-font-color: rgb(34, 34, 26);
+
+$secondary-button-bg-color: rgb(69, 68, 143);
+$secondary-button-font-color: rgb(234, 234, 255);
+
+$body-font: rgb(34, 34, 34);
+$body-font-light: rgb(230, 230, 230);
+
+$site-headings-light: rgb(246, 246, 246);
+
+$site-headings-dark: rgb(40, 40, 40);
+
+$navigation-links: rgb(179, 179, 179);
+
+$figure-captions: rgb(69, 69, 69);
+
+
+/* STYLES */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: $body-font;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+    font-size: $heading1;
+}
+
+h2 {
+  font-size: $heading2;
+}
+
+header {
+  padding: 20px;
+  background-color: $primary-site-color;
+  position: fixed;
+  width: 100%;
+}
+
+section {
+  border: $thin-border;
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+}
+
+article {
+}
+
+nav {
+  font-size: $nav;
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a {
+  color: $navigation-links;
+  text-decoration: none;
+}
+
+nav li {
+  float: left;
+  margin-left: 45px;
+}
+
+#logo {
+  float: left;
+  color: $site-headings-light;
+}
+
+#hidden {
+  height: 78px;
+  width: 100%;
+}
+
+#home {
+  background-image: url('../images/circuits_bg_lowres.jpg');
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.blurb {
+  float: left;
+  width: 300px;
+  color: $body-font-light;
+  padding: 10px;
+}
+
+.imagestack {
+  width: 620px;
+  margin: 0 auto;
+}
+
+.imgblock {
+  float: left;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 0 10px 10px 0;
+  color: $site-headings-light;
+}
+
+.imgblock:first-child {
+  background-image: url('../images/quad1.jpg');
+}
+
+.imgblock:nth-child(2) {
+  background-image: url('../images/quad2.jpg');
+}
+
+.imgblock:nth-child(3) {
+  background-image: url('../images/quad3.jpg');
+}
+
+#people {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.person {
+  float: left;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.person img {
+  border-radius: 100%;
+}
