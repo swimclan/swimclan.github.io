@@ -1,4 +1,6 @@
 /* GLOBAL STUFF */
+@import 'variables.scss';
+
 @font-face {
     font-family: 'Commodore Pixelized';
     src: url('../fonts/Commodore Pixelized.ttf') format('truetype');
@@ -7,6 +9,7 @@
 
 * {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .clearfix:after {
@@ -22,39 +25,6 @@
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
 /* close commented backslash hack */
-
-/* SASS VARIABLES */
-$heading-font: 'Commodore Pixelized', serif;
-$heading1: 2.5rem;
-$heading2: 2.4rem;
-$nav: 1.5rem;
-$major-button-text: 1.5rem;
-$minor-button-text: 1rem;
-$figure-caption: 0.75rem;
-
-$thin-border: 1px solid #666;
-
-$primary-site-color: rgb(86, 78, 179);
-
-$primary-button-bg-color: rgb(78, 79, 61);
-$primary-button-font-color: rgb(34, 34, 26);
-
-$site-off-white: rgb(249, 247, 240);
-
-$secondary-button-bg-color: rgb(69, 68, 143);
-$secondary-button-font-color: rgb(90, 90, 102);
-
-$body-font: rgb(34, 34, 34);
-$body-font-light: rgb(230, 230, 230);
-
-$site-headings-light: rgb(246, 246, 246);
-
-$site-headings-dark: rgb(86, 78, 179);
-
-$navigation-links: rgb(220, 220, 220);
-
-$figure-caption-font-color: rgb(69, 69, 69);
-
 
 /* STYLES */
 
@@ -83,11 +53,20 @@ h3 {
 
 }
 
+.loading {
+  width: 100%;
+  img {
+    width: 50px;
+  }
+}
+
 header {
-  padding: 20px;
+  padding: 15px;
+  padding-top: 27px;
   background-color: $primary-site-color;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 section {
@@ -101,35 +80,63 @@ section {
 }
 
 nav {
+  width: 480px;
   font-size: $nav;
-  float: right;
+  float: left;
+  vertical-align: middle;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  float: left;
+  width: 100%;
+  display: none;
 }
 
 nav ul a {
   color: $navigation-links;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 nav li {
   float: left;
-  margin-left: 45px;
+  margin-left: 5%;
 }
 
 nav li:nth-child(5) {
   background-color: $site-off-white;
-  padding: 8px;
+  padding: 4px;
   border-radius: 5px;
   font-size: $minor-button-text;
+  box-shadow: 0 4px #444;
+  transition: background-color 0.1s;
+  a {
+    transition: color 0.1s;
+  }
+}
+
+nav li:nth-child(5):hover {
+  background-color: $secondary-button-bg-color;
+  a {
+    color: $site-off-white;
+  }
 }
 
 nav li:nth-child(5) a {
   color: $secondary-button-font-color;
+}
+
+.hamburger {
+  font-size: $hamburger-size;
+  color: $navigation-links;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
+
 }
 
 #logo {
@@ -171,6 +178,12 @@ nav li:nth-child(5) a {
   height: 300px;
   margin: 0 10px 10px 0;
   color: $site-headings-light;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.imgblock:hover {
+  opacity: 1;
 }
 
 .imgblock:first-child {
@@ -207,13 +220,15 @@ nav li:nth-child(5) a {
 
 .person img {
   border-radius: 100%;
+  width: 220px;
 }
 
-.bio {
+.bios {
   margin-top: 20px;
   width: 66%;
   margin: 0 auto;
   clear: left;
+  text-align: left;
 }
 
 #projects {
@@ -226,12 +241,13 @@ nav li:nth-child(5) a {
 }
 
 .projectblock {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .project {
   float: left;
+  padding: 1%;
   width: 25%;
   figcaption {
     color: $figure-caption-font-color;
@@ -242,19 +258,57 @@ nav li:nth-child(5) a {
 
 .description {
   clear: left;
+  text-align: left;
   width: 90%;
   margin: 0 auto;
   padding: 3%;
   border: 20px solid rgb(136, 147, 238);
   background-color: $primary-site-color;
   color: rgb(136, 147, 238);
-  p {
+  .typer {
     font-family: 'Commodore Pixelized';
     font-size: 1.3rem;
-    text-align: left;
     margin: 0;
     line-height: 1.8rem;
   }
+  p {
+    display: none;
+  }
+}
+
+.blink_me {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
 
 #locations {
@@ -281,8 +335,12 @@ nav li:nth-child(5) a {
   p {
     color: $site-headings-light
   }
+  button {
+    font-family: $heading-font;
+    box-shadow: 0 5px #444;
+  }
   .contact_form {
-    width: 42%;
+    width: 50%;
     height: 60px;
     font-size: 1.5rem;
     margin: 10px auto;
@@ -302,4 +360,28 @@ nav li:nth-child(5) a {
   #user_notes {
     height: 200px;
   }
+}
+
+footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  color: $primary-site-color;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1008px) {
+  #hidden {
+    height: 74px;
+  }
+  #logo {
+    font-size: $heading1-tablet;
+  }
+  #about img {
+    width: 180px;
+  }
+
 }

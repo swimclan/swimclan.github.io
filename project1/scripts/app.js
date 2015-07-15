@@ -1,6 +1,15 @@
 $(document).ready(function() {
   //log that the document is ready
   console.log("All resources are loaded");
+
+  //hide the marketing plugs
+  $('.blurb p').hide();
+  $('#passion').show();
+
+  //hide the employee bios
+  $('.bio').hide();
+  $('#ceo').show();
+
   //hide your spinner, success message and error message divs
   $('.loading').hide();
   $('.error').hide();
@@ -14,8 +23,39 @@ $(document).ready(function() {
   });
 
   $('.project').on('click', function() {
-    app.typeDescription('My name is Matt Herron and I like to go to school');
+    var currentMake = $(this).data('make');
+    var description = $('#' + currentMake).text();
+    app.typeDescription(description);
   });
+
+  //show the marketing plugs on each mouse over
+  $('.imgblock').on('mouseenter', function() {
+    var $thisID = $(this).data('plug');
+    $('.blurb p').hide();
+    $('#' + $thisID).fadeIn(400);
+  });
+
+  //auto scroll down from the nav items
+  $('nav a').on('click', function(e) {
+    var navHeight = $('header').height();
+  	e.preventDefault();
+  	linkTo = this.hash;
+  	var scrollToHash = $(linkTo).offset().top - navHeight;
+  	$('html, body').animate({
+  		scrollTop: scrollToHash
+  	}, 600, 'swing');
+  });
+
+  //on click of the employees, show their bio
+  $('.person').on('click', function() {
+    var title = $(this).data('title');
+    $('.bio').hide();
+
+    console.log(title);
+    $('#' + title).fadeIn(400);
+
+  });
+
 });
 
 //Here is your app's namespace so you dont collide with the global scope!
@@ -25,10 +65,12 @@ var app = app || {};
 app.createFormObject = function() {
   var retJson = new Object();
 
-  retJson.userName = $('#user_name').val();
+  retJson.userFirstName = $('#user_first_name').val();
+  retJson.userLastName = $('#user_last_name').val();
+  retJson.userName = retJson.userFirstName + ' ' + retJson.userLastName
   // console.log(retJson.username);
   retJson.userEmail = $('#user_email').val();
-  retJson.request = $('#user_request').val();
+  retJson.request = $('#user_notes').val();
   retJson.systems = new Object();
   //just get used to console logging the results of your functions
   console.log(retJson);
@@ -59,15 +101,21 @@ app.sendEmail = function(emaildata) {
 }
 
 app.typeDescription = function(msg) {
-  var msgArray = msg.split('');
-  $('.description p').html("");
-  for (var ch in msgArray) {
-    $('.description p').append(msgArray[ch]);
-    app.sleep(300);
-  }
-}
+  //initialize counter
+  var i = 0;
+  //define text
+  var text = msg;
+  //reset the description screen
+  $('.description .typer').html("");
+  //text is split up to letters
+  $.each(text.split(''), function(i, letter){
 
-app.sleep = function(ms) {
-  ms += new Date().getTime();
-  while (new Date() < ms){}
+      //we add 100*i ms delay to each letter
+      setTimeout(function(){
+
+          //we add the letter to the container
+          $('.description .typer').html($('.description .typer').html() + letter);
+
+      }, 50 * i);
+  });
 }

@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font awesome icons!-->
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
@@ -22,17 +24,20 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+</div>
     <header class="clearfix">
       <h1 id="logo">4K RESTORATIONS</h1>
-      <nav>
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">locations</a></li>
-          <li><a href="#">get started!</a></li>
+      <nav class="clearfix">
+        <ul class="clearfix">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#locations">locations</a></li>
+          <li><a href="#contact">get started!</a></li>
         </ul>
+        <div class="hamburger">
+          &equiv;
+        </div>
       </nav>
     </header>
     <div id="hidden">
@@ -40,19 +45,25 @@
     </div>
     <section id="home">
       <article class="imagestack clearfix">
-        <div class="imgblock">
+        <div class="imgblock" data-plug="passion">
           <h3>passion</h3>
         </div>
-        <div class="imgblock">
+        <div class="imgblock" data-plug="knowledge">
           <h3>knowledge</h3>
 
         </div>
-        <div class="imgblock">
+        <div class="imgblock" data-plug="experience">
           <h3>experience</h3>
 
         </div>
         <article class="blurb">
-          <p>
+          <p id="passion">
+            We are all the nerdiest computer nerds in the world.  This means we are passionate about working on your vintage home computing device.  We are like you, we want to preserve this precious history.  Know that we are the most passionate people in the industry.
+          </p>
+          <p id="knowledge">
+            Each of our technicians are fully trainined computer and hardware engineers that have the knowledge of not only the history of the computer market but also each of the hardware platforms and the digital footprint of those platforms.
+          </p>
+          <p id="experience">
             Our team of computer technicians are the most experienced in the industry.  With over 40 years of combined real-world electrical engineering and computer assembly experience..  With this type of experience you can imagine that the work will be stellar and all restorations will bring you much joy in this life.
           </p>
         </article>
@@ -64,20 +75,35 @@
 
       </p>
       <article id="people" class="clearfix">
-        <div class="person">
+        <div class="person" data-title="ceo">
           <img src="images/matth.jpg" alt="" />
         </div>
-        <div class="person">
+        <div class="person" data-title="technician">
           <img src="images/steve.jpg" alt="" />
         </div>
-        <div class="person">
+        <div class="person" data-title="historian">
           <img src="images/tracey.jpg" alt="" />
         </div>
-        <div class="bio">
-          <h3>Matt Herron - Founder / CEO</h3>
-          <p>
-            Matt is the ultimate computer nerd.  Matt grew up using the the Commodore 64 and programming it at the age of 8 years old.  After cutting his teeth on the software side of the Commodore platform,  Matt decided to take apart the computer and rebuild it from scratch.  Needless to say his dad wasn't too happy!
-          </p>
+        <div class="bios">
+          <div class="bio" id="ceo">
+            <h3>Matt Herron - Founder / CEO</h3>
+            <p>
+              Matt is the ultimate computer nerd.  Matt grew up using the the Commodore 64 and programming it at the age of 8 years old.  After cutting his teeth on the software side of the Commodore platform,  Matt decided to take apart the computer and rebuild it from scratch.  Needless to say his dad wasn't too happy!
+            </p>
+          </div>
+          <div class="bio" id="technician">
+            <h3>Steve Reynolds - Technical Director</h3>
+            <p>
+              Steve comes to us from Winchester microcomputing in San Diego California.  Steve lives for restoring vintage systems and has a collection of over 200 systems!  He was the lead engineer for the Lisa project at Apple Computers in the early 1980s and has worked with industry giants like Steve Jobs, Bill Gates and other great leaders.
+            </p>
+          </div>
+          <div class="bio" id="historian">
+            <h3>Tracey Patterson - Computer Historian</h3>
+            <p>
+              Tracey is a born personal home computer historian.  With a collection of over 60 vintage PCs in her basement, Tracey knows the ins and outs of whoe manufactured them, who designed them, what company stories influenced the end product and more.  She will give you the understanding about where your system came from.
+            </p>
+          </div>
+
         </div>
       </article>
 
@@ -88,24 +114,36 @@
         Check out some of the projects we have worked on that made us the best!
       </p>
       <article class="projectblock clearfix">
-        <figure class="project">
+        <figure class="project" data-make="rockwell">
           <img src="images/rockwell_aim_65.jpg" alt="" /><br>
           <figcaption>Rockwell AIM 65</figcaption>
         </figure>
-        <figure class="project">
+        <figure class="project" data-make="tandy">
           <img src="images/trs_80.jpg" alt="" /><br>
           <figcaption>Radioshack / Tandy TRS-80</figcaption>
         </figure>
-        <figure class="project">
+        <figure class="project" data-make="osborne">
           <img src="images/osborne1.jpg" alt="" /><br>
           <figcaption>Osborne 1</figcaption>
         </figure>
-        <figure class="project">
+        <figure class="project" data-make="piedpiper">
           <img src="images/pied_piper.jpg" alt="" /><br>
           <figcaption>Pied Piper Communicator 1</figcaption>
         </figure>
         <article class="description">
-          <p>This project was the most challenging project that we had as a development team.  It was a full top down restoration where we had to pull out the logic board and put all the contents of the computer back on after a long time in the shop.<span id="cursor">&block;</span></p>
+          <span class="typer">Click a project and read about the process and the outcome!</span><span class="blink_me" id="cursor">&block;</span>
+          <p id="rockwell">
+            The Rockwell was the most insane project we ever did!  We spent over 12 months taking this bad boy arat and it still wasn't complete.  We had to bring the big guns in on this project because there weren't any parts available for it.  Tracey Patterson came in and used her historical knowledge of the product to locate the right parts that were critical to the success of the restoration.  The final machine went to the Rockell Digital compture museum  in Johnson Tennessee
+          </p>
+          <p id="tandy">
+            One of the greatest vintage computers of all time!  The Radio shack Tandy product line was, in its day, one of the greatest personal home computers ever built.  It was so good that it sold over 3.5 million units!  This restoration was fairly straightforward and only took us 3 months to complete.  Most of the parts were still available via the catelogs and the electrical engineering sites that exist all over the place.  Tracey Patterson got us the final information about where to get the right power supply.  This unit went back to its private owner, Steve Wozniak.
+          </p>
+          <p id="osborne">
+            The Osborne is truly the very first laptop ever built.  It was made for extremely rich businessmen who absolutely needed to be able to terminal into their VAX connections while on the road, in a car train or plane.  Finding parts for this machine was next to impossible and we almost abandoned the project.  Steve Reynolds, our technical director had to fly to Japan to get his hands on the processor heat sinks that needed to be fit onto the logic board.  It was almost a lost cause until he paid off a couple flight attendants to masquerade as his wife and daughter which made the Japanese parts distributor people very happy.  The unit lives on at the Smithsonian Institute for Retired Technology.
+          </p>
+          <p id="piedpiper">
+            When we first saw the Pied Piper commuicator (or what was left of it!) we were all thinking this was a practical joke.  Everyone in the office is a huge Silicon Valley&trade; fan!  The restoration project took us over 6 months because the keys were all missing and it needed a new screen buffer module (thats right, the screen used its own memory and processor!).  Steve Reynold stepped in to make sure the parts were the correct ones because he had a friend who had one in high school and he remembers building it even though he forgot what the name of the system was.  The final product was shipped back the original owner in Tuscon, AZ.
+          </p>
         </article>
       </article>
 
@@ -146,11 +184,17 @@
         <input id="user_restoration" type="radio" name="interest" value=""><label for="user_restoration">Full Restoration</label>
         <input id="user_rebuild" type="radio" name="interest" value=""><label for="user_rebuild">Software Rebuild</label>
       </fieldset>
-
+      <button id="form_send" class="contact_form" type="submit" name="button">Get Started!</button>
+      <div class="loading">
+        <img src="images/spinner.gif" alt="" />
+      </div>
     </section>
     <footer>
-      <p>
-
+      <p class='copyright'>
+        &copy; 2015 4K Restorations, LLC.  Website built by Matt Herron Productions
+      </p>
+      <p class='follow'>
+        Follow us on <i class="fa fa-twitter"> <i class="fa fa-facebook"> <i class="fa fa-linkedin">
       </p>
 
     </footer>
