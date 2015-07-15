@@ -183,7 +183,7 @@ nav li:nth-child(5) a {
     font-size: 1.3rem;
     text-align: left;
     margin: 0;
-    line-height: 1.5rem; }
+    line-height: 1.8rem; }
 
 #locations {
   background-color: #f9f7f0; }
@@ -208,7 +208,16 @@ nav li:nth-child(5) a {
     width: 42%;
     height: 60px;
     font-size: 1.5rem;
-    margin: 10px auto; }
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px; }
+    #contact .contact_form input {
+      margin: 5px; }
+    #contact .contact_form label {
+      color: #f9f7f0;
+      font-size: 1rem;
+      margin-right: 5%; }
   #contact #user_notes {
     height: 200px; }
 
