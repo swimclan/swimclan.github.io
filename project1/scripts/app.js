@@ -12,6 +12,10 @@ $(document).ready(function() {
     console.log('Clicked the submit button...');
     app.sendEmail(formdata);
   });
+
+  $('.project').on('click', function() {
+    app.typeDescription('My name is Matt Herron and I like to go to school');
+  });
 });
 
 //Here is your app's namespace so you dont collide with the global scope!
@@ -52,4 +56,18 @@ app.sendEmail = function(emaildata) {
   }
   //You actually need to execute the AJAX call!!!! DO NOT FORGET THIS....
     $.ajax(ajaxData);
+}
+
+app.typeDescription = function(msg) {
+  var msgArray = msg.split('');
+  $('.description p').html("");
+  for (var ch in msgArray) {
+    $('.description p').append(msgArray[ch]);
+    app.sleep(300);
+  }
+}
+
+app.sleep = function(ms) {
+  ms += new Date().getTime();
+  while (new Date() < ms){}
 }

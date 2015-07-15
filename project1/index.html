@@ -53,13 +53,16 @@
         </div>
         <article class="blurb">
           <p>
-            Our team of computer technicians are the most experienced in the industry.  With over 40 years of combined real-world electrical engineering and computer assembly experience..  With this type of experience you can imagine that the work will be stellar and all restorations will bring you much joy in this life.  You will be transported back to a time when computers were magic...
+            Our team of computer technicians are the most experienced in the industry.  With over 40 years of combined real-world electrical engineering and computer assembly experience..  With this type of experience you can imagine that the work will be stellar and all restorations will bring you much joy in this life.
           </p>
         </article>
       </article>
     </section>
     <section id="about">
       <h2>the team</h2>
+      <p>
+
+      </p>
       <article id="people" class="clearfix">
         <div class="person">
           <img src="images/matth.jpg" alt="" />
@@ -70,32 +73,89 @@
         <div class="person">
           <img src="images/tracey.jpg" alt="" />
         </div>
+        <div class="bio">
+          <h3>Matt Herron - Founder / CEO</h3>
+          <p>
+            Matt is the ultimate computer nerd.  Matt grew up using the the Commodore 64 and programming it at the age of 8 years old.  After cutting his teeth on the software side of the Commodore platform,  Matt decided to take apart the computer and rebuild it from scratch.  Needless to say his dad wasn't too happy!
+          </p>
+        </div>
       </article>
-      <article class="bio">
-        <h3>Matt Herron - Founder / CEO</h3>
-        <p>
-          Matt is the ultimate computer nerd.  Matt grew up using the the Commodore 64 and programming it at the age of 8 years old.  After cutting his teeth on the software side of the Commodore platform,  Matt decided to take apart the computer and rebuild it from scratch.  Needless to say his dad wasn't too happy!
-        </p>
-      </article>
+
     </section>
     <section id="projects">
       <h2>projects</h2>
+      <p>
+        Check out some of the projects we have worked on that made us the best!
+      </p>
+      <article class="projectblock clearfix">
+        <figure class="project">
+          <img src="images/rockwell_aim_65.jpg" alt="" /><br>
+          <figcaption>Rockwell AIM 65</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="images/trs_80.jpg" alt="" /><br>
+          <figcaption>Radioshack / Tandy TRS-80</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="images/osborne1.jpg" alt="" /><br>
+          <figcaption>Osborne 1</figcaption>
+        </figure>
+        <figure class="project">
+          <img src="images/pied_piper.jpg" alt="" /><br>
+          <figcaption>Pied Piper Communicator 1</figcaption>
+        </figure>
+        <article class="description">
+          <p>This project was the most challenging project that we had as a development team.  It was a full top down restoration where we had to pull out the logic board and put all the contents of the computer back on after a long time in the shop.<span id="cursor">&block;</span></p>
+        </article>
+      </article>
 
 
     </section>
     <section id="locations">
       <h2>locations</h2>
+      <p>
+        Find a location near you to stop by and ask us some questions!
+      </p>
+      <article class="mapblock">
+        <div class="tabs">
+          <button type="button" name="button">Chicago, IL</button>
+          <button type="button" name="button">Los Angeles, CA</button>
+          <button type="button" name="button">Las Vegas, NV</button>
+          <button type="button" name="button">Brooklyn, NY</button>
+        </div>
+        <div class="map">
+          <img src="images/google_maps_hello_world.jpg" alt="" />
+        </div>
+      </article>
 
     </section>
     <section id="contact">
       <h2>get started</h2>
+      <p>
+        Drop us a line and get started bringing your dream machine back to life!
+      </p>
+      <input id="user_first_name" class="contact_form" type="text" name="first_name" value="" placeholder="First Name"><br>
+      <input id="user_last_name" class="contact_form" type="text" name="last_name" value="" placeholder="Last Name"><br>
+      <input id="user_email" class="contact_form" type="email" name="email" value="" placeholder="Email Address"><br>
+      <select id="computer_model" class="contact_form" name="system_make">
+        <option>Choose Your System Make</option>
+      </select><br>
+      <textarea id="user_notes" class="contact_form" name="name" rows="8" cols="40" placeholder="Additional Information"></textarea><br>
+      <fieldset id="interests" class="contact_form">
+        <input id="user_repair" type="radio" name="interest" value=""><label for=""></label>
+        <input id="user_restoration" type="radio" name="interest" value="">
+        <input id="user_rebuild" type="radio" name="interest" value="">
+      </fieldset>
+
     </section>
     <footer>
+      <p>
 
+      </p>
 
     </footer>
 
-<script scr="scripts/jquery.js" type="text/javascript">
+<script src="scripts/jquery.js" type="text/javascript">
 
 </script>
 <script src="scripts/app.js" type="text/javascript">

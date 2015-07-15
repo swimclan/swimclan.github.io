@@ -29,7 +29,7 @@
 /* STYLES */
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #222222; }
 
 h1, h2, h3, h4, h5 {
@@ -41,8 +41,8 @@ h1 {
   font-size: 2.5rem; }
 
 h2 {
-  font-size: 2.3rem;
-  margin: 20px 0 20px 0; }
+  font-size: 2.4rem;
+  margin: 0 0 40px 0; }
 
 header {
   padding: 20px;
@@ -51,10 +51,11 @@ header {
   width: 100%; }
 
 section {
-  border: 1px solid #666;
-  text-align: center;
   width: 100%;
   padding: 5%; }
+
+#about, #projects, #locations, #contact {
+  text-align: center; }
 
 nav {
   font-size: 1.5rem;
@@ -66,12 +67,21 @@ nav ul {
   margin: 0; }
 
 nav ul a {
-  color: #b3b3b3;
+  color: gainsboro;
   text-decoration: none; }
 
 nav li {
   float: left;
   margin-left: 45px; }
+
+nav li:nth-child(5) {
+  background-color: #f9f7f0;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1rem; }
+
+nav li:nth-child(5) a {
+  color: #5a5a66; }
 
 #logo {
   float: left;
@@ -116,17 +126,90 @@ nav li {
 .imgblock:nth-child(3) {
   background-image: url("../images/quad3.jpg"); }
 
+#about {
+  background-color: #f9f7f0; }
+
+#about h2 {
+  color: #564eb3; }
+
 #people {
   margin: 0 auto;
-  width: 90%;
-  padding-left: 4%; }
+  max-width: 77%; }
 
 .person {
   float: left;
-  margin: 1%;
-  border-radius: 100%; }
+  width: 33.3%;
+  border-radius: 100%;
+  margin-bottom: 20px; }
 
 .person img {
   border-radius: 100%; }
+
+.bio {
+  margin-top: 20px;
+  width: 66%;
+  margin: 0 auto;
+  clear: left; }
+
+#projects {
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  background-color: white; }
+  #projects h2 {
+    color: #564eb3; }
+
+.projectblock {
+  width: 75%;
+  margin: 0 auto; }
+
+.project {
+  float: left;
+  width: 25%; }
+  .project figcaption {
+    color: #454545;
+    font-size: 0.75rem;
+    margin-bottom: 50px; }
+
+.description {
+  clear: left;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3%;
+  border: 20px solid #8893ee;
+  background-color: #564eb3;
+  color: #8893ee; }
+  .description p {
+    font-family: 'Commodore Pixelized';
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0;
+    line-height: 1.5rem; }
+
+#locations {
+  background-color: #f9f7f0; }
+  #locations button {
+    width: 155px;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #45448f;
+    border: 0;
+    border-top: 5px solid #8893ee; }
+  #locations img {
+    width: 636px; }
+
+#contact {
+  background-color: #564eb3; }
+  #contact h2 {
+    color: #f6f6f6; }
+  #contact p {
+    color: #f6f6f6; }
+  #contact .contact_form {
+    width: 42%;
+    height: 60px;
+    font-size: 1.5rem;
+    margin: 10px auto; }
+  #contact #user_notes {
+    height: 200px; }
 
 /*# sourceMappingURL=main.css.map */
