@@ -55,6 +55,10 @@ $(document).ready(function() {
     $('#' + title).fadeIn(400);
 
   });
+  //make the mobile nav work
+  $('.hamburger li').on('click', function() {
+    $('nav-links').slideToggle(200);
+  });
 
 });
 

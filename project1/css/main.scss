@@ -82,17 +82,17 @@ section {
 nav {
   width: 480px;
   font-size: $nav;
-  float: left;
+  float: right;
   vertical-align: middle;
 }
 
-nav ul {
+.nav-links {
   list-style: none;
   padding: 0;
   margin: 0;
   float: left;
   width: 100%;
-  display: none;
+  display: block;
 }
 
 nav ul a {
@@ -130,13 +130,21 @@ nav li:nth-child(5) a {
 }
 
 .hamburger {
-  font-size: $hamburger-size;
-  color: $navigation-links;
-  display: inline-block;
+  position: relative;
   padding: 0;
   margin: 0;
-  float: left;
-
+  float: right;
+  li {
+    font-size: $hamburger-size;
+    color: $navigation-links;
+    display: none;
+    padding: 0;
+    margin: 0;
+    height: 0px;
+    vertical-align: top;
+    position: relative;
+    top: -50px;
+  }
 }
 
 #logo {
@@ -383,5 +391,34 @@ footer {
   #about img {
     width: 180px;
   }
+}
 
+@media (max-width: 890px) {
+  nav {
+    clear: left;
+    width: 100%;
+  }
+  .nav-links {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: black;
+    li {
+      float: none;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  .hamburger {
+    float: right;
+    li {
+      display: block;
+      top: -80px;
+      right: 10px;
+    }
+  }
+  header {
+    height: 74px;
+  }
 }
