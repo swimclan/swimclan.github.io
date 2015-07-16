@@ -31,7 +31,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  color: #222222; }
+  color: #222222;
+  position: relative; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Commodore Pixelized", serif;
@@ -52,7 +53,7 @@ h2 {
 
 header {
   padding: 15px;
-  padding-top: 27px;
+  padding-top: 20px;
   background-color: #564eb3;
   position: fixed;
   width: 100%;
@@ -79,7 +80,7 @@ nav {
   width: 100%;
   display: block; }
 
-nav ul a {
+.nav-links a {
   color: gainsboro;
   text-decoration: none;
   vertical-align: middle; }
@@ -88,19 +89,19 @@ nav li {
   float: left;
   margin-left: 5%; }
 
-nav li:nth-child(5) {
+.nav-links li:nth-child(5) {
   background-color: #f9f7f0;
   padding: 4px;
   border-radius: 5px;
   font-size: 1rem;
   box-shadow: 0 4px #444;
   transition: background-color 0.1s; }
-  nav li:nth-child(5) a {
+  .nav-links li:nth-child(5) a {
     transition: color 0.1s; }
 
-nav li:nth-child(5):hover {
+.nav-links li:nth-child(5):hover {
   background-color: #45448f; }
-  nav li:nth-child(5):hover a {
+  .nav-links li:nth-child(5):hover a {
     color: #f9f7f0; }
 
 nav li:nth-child(5) a {
@@ -127,7 +128,7 @@ nav li:nth-child(5) a {
   color: #f6f6f6; }
 
 #hidden {
-  height: 78px;
+  height: 71px;
   width: 100%; }
 
 #home {
@@ -319,7 +320,7 @@ footer {
 
 @media (max-width: 1008px) {
   #hidden {
-    height: 74px; }
+    height: 67px; }
 
   #logo {
     font-size: 2rem; }
@@ -327,6 +328,10 @@ footer {
   #about img {
     width: 180px; } }
 @media (max-width: 890px) {
+  section {
+    padding-left: 0;
+    padding-right: 0; }
+
   nav {
     clear: left;
     width: 100%; }
@@ -340,16 +345,45 @@ footer {
     .nav-links li {
       float: none;
       padding: 20px;
+      margin: 0;
       text-align: center; }
 
   .hamburger {
     float: right; }
     .hamburger li {
       display: block;
-      top: -80px;
-      right: 10px; }
+      top: -103px;
+      margin-right: 20px; }
 
   header {
-    height: 74px; } }
+    height: 74px;
+    padding: 0; }
+    header #logo {
+      margin-bottom: 23px;
+      margin-top: 20px;
+      margin-left: 20px; }
+
+  .nav-links li:nth-child(5) {
+    background-color: black;
+    padding: 20px;
+    border-radius: 0; }
+    .nav-links li:nth-child(5) a {
+      color: #f9f7f0;
+      font-size: gainsboro; }
+
+  .bios {
+    width: 70%; }
+
+  figure:nth-child(3) {
+    clear: left; }
+
+  .projectblock {
+    width: 100%; }
+    .projectblock .project {
+      width: 50%;
+      height: 300px; } }
+@media (max-width: 730px) {
+  .contact_form {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

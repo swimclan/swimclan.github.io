@@ -32,6 +32,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   color: $body-font;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -62,7 +63,7 @@ h3 {
 
 header {
   padding: 15px;
-  padding-top: 27px;
+  padding-top: 20px;
   background-color: $primary-site-color;
   position: fixed;
   width: 100%;
@@ -95,7 +96,7 @@ nav {
   display: block;
 }
 
-nav ul a {
+.nav-links a {
   color: $navigation-links;
   text-decoration: none;
   vertical-align: middle;
@@ -106,7 +107,7 @@ nav li {
   margin-left: 5%;
 }
 
-nav li:nth-child(5) {
+.nav-links li:nth-child(5) {
   background-color: $site-off-white;
   padding: 4px;
   border-radius: 5px;
@@ -118,7 +119,7 @@ nav li:nth-child(5) {
   }
 }
 
-nav li:nth-child(5):hover {
+.nav-links li:nth-child(5):hover {
   background-color: $secondary-button-bg-color;
   a {
     color: $site-off-white;
@@ -153,7 +154,7 @@ nav li:nth-child(5) a {
 }
 
 #hidden {
-  height: 78px;
+  height: 71px;
   width: 100%;
 }
 
@@ -383,7 +384,7 @@ footer {
 
 @media (max-width: 1008px) {
   #hidden {
-    height: 74px;
+    height: 67px;
   }
   #logo {
     font-size: $heading1-tablet;
@@ -394,6 +395,11 @@ footer {
 }
 
 @media (max-width: 890px) {
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   nav {
     clear: left;
     width: 100%;
@@ -407,6 +413,7 @@ footer {
     li {
       float: none;
       padding: 20px;
+      margin: 0;
       text-align: center;
     }
   }
@@ -414,11 +421,47 @@ footer {
     float: right;
     li {
       display: block;
-      top: -80px;
-      right: 10px;
+      top: -103px;
+      margin-right: 20px;
     }
   }
   header {
     height: 74px;
+    padding: 0;
+    #logo {
+      margin-bottom: 23px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+  .nav-links li:nth-child(5) {
+    background-color: black;
+    padding: 20px;
+    border-radius: 0;
+    a {
+      color: $site-off-white;
+      font-size: $navigation-links;
+    }
+  }
+  .bios {
+    width: 70%;
+  }
+
+  figure:nth-child(3) {
+    clear: left;
+  }
+
+  .projectblock {
+    width: 100%;
+    .project {
+      width: 50%;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .contact_form {
+    width: 100%;
   }
 }

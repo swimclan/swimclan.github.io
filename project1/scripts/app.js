@@ -2,6 +2,9 @@ $(document).ready(function() {
   //log that the document is ready
   console.log("All resources are loaded");
 
+  //set mobile nav state to false (menu not mobile)
+  app.mobileNav = false;
+
   //hide the marketing plugs
   $('.blurb p').hide();
   $('#passion').show();
@@ -57,8 +60,39 @@ $(document).ready(function() {
   });
   //make the mobile nav work
   $('.hamburger li').on('click', function() {
-    $('nav-links').slideToggle(200);
+    if (!app.mobileNav) {
+      $(this).css('top', '-430px');
+      $('.nav-links').show();
+      $(this).html('&times;');
+      app.mobileNav = true;
+    } else {
+      $(this).css('top', '-103px');
+      $('.nav-links').hide();
+      $(this).html('&equiv;');
+      app.mobileNav =  false;
+    }
   });
+
+  $('.navlinks li, .nav-links a').on('click', function() {
+    if (app.mobileNav) {
+      console.log(app.mobileNav);
+      $('.nav-links').hide();
+      app.mobileNav = false;
+      $('.hamburger li').css('top', '-100px');
+      $('.hamburger li').html('&equiv;')
+    }
+  });
+
+  $(window).resize(function () {
+	if ($(window).width() >= 890) {
+		$('.nav-links').show();
+    app.mobileNav = false;
+	} else if ($(window).width() < 890) {
+    $('.nav-links').hide();
+    app.mobileNav = false;
+    $('.hamburger li').html('&equiv;')
+  }
+});
 
 });
 
