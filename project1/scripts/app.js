@@ -5,30 +5,36 @@ $(document).ready(function() {
   //set mobile nav state to false (menu not mobile)
   app.mobileNav = false;
 
-  //setup Google Maps api
+  //setup Google Maps location options
   app.mapOptions = {
     chicago: {
-      center: new google.maps.LatLng(37.78,  -122.987),
-      zoom: 12,
+      center: new google.maps.LatLng(41.891653, -87.632470),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     },
     losangeles: {
-      center: new google.maps.LatLng(37.78,  -122.987),
-      zoom: 12,
+      center: new google.maps.LatLng(33.836251, -118.338172),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     },
     lasvegas: {
-      center: new google.maps.LatLng(37.78,  -122.987),
-      zoom: 12,
+      center: new google.maps.LatLng(36.181136, -115.123630),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     },
     brooklyn: {
-      center: new google.maps.LatLng(37.78,  -122.987),
-      zoom: 12,
+      center: new google.maps.LatLng(40.703242, -73.990854),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
   }
-  new google.maps.Map($('#mapCanvas')[0], app.mapOptions.chicago);
+
+  //initialize Google maps and markers objects
+  app.maps = new Object();
+  app.markers = new Object();
+
+  //render default map to Chicago
+  renderGoogleMap('chicago');
 
   //hide the marketing plugs
   $('.blurb p').hide();
@@ -42,6 +48,7 @@ $(document).ready(function() {
   $('.loading').hide();
   $('.error').hide();
   $('.success').hide();
+
   //on the click of the form submit button, generate the form data object and bind it to app
   $('#form_send').on('click', function() {
     var formdata = app.createFormObject();
@@ -106,6 +113,16 @@ $(document).ready(function() {
       $('.hamburger li').css('top', '-100px');
       $('.hamburger li').html('&equiv;')
     }
+  });
+
+  //Google maps tab selector
+  $('.tabs button').on('click', function() {
+    var locale = $(this).data('location');
+    //set the highlighted tab
+    $('.tabs button').css('border-top', '5px solid rgb(106, 117, 208)')
+    $(this).css('border-top', '5px solid rgb(136, 147, 238)')
+    //render the correct Google Map with Marker
+    renderGoogleMap(locale);
   });
 
   $(window).resize(function () {
@@ -181,4 +198,18 @@ app.typeDescription = function(msg) {
 
       }, 50 * i);
   });
+}
+
+function renderGoogleMap(location) {
+  //draw first
+  app.maps[location] = new google.maps.Map($('#mapCanvas')[0], app.mapOptions[location]);
+
+  app.markers[location] = new google.maps.Marker({
+      position: app.mapOptions[location].center,
+      map: app.maps[location],
+      title: '4K Restorations: ' + location
+  });
+
+  //set the marker on chicago location as default
+  app.markers[location].setMap(app.maps[location]);
 }

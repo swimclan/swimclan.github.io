@@ -152,12 +152,12 @@
       </p>
       <article class="mapblock">
         <div class="tabs">
-          <button type="button" name="button">Chicago, IL</button>
-          <button type="button" name="button">Los Angeles, CA</button>
-          <button type="button" name="button">Las Vegas, NV</button>
-          <button type="button" name="button">Brooklyn, NY</button>
+          <button type="button" name="button" data-location="chicago">Chicago, IL</button>
+          <button type="button" name="button" data-location="losangeles">Los Angeles, CA</button>
+          <button type="button" name="button" data-location="lasvegas">Las Vegas, NV</button>
+          <button type="button" name="button" data-location="brooklyn">Brooklyn, NY</button>
         </div>
-        <div id="mapCanvas" style="height:100%; margin: 0;"></div>
+        <div id="mapCanvas"></div>
       </article>
 
     </section>
@@ -193,10 +193,8 @@
 
     </footer>
 
-<script src="scripts/jquery.js" type="text/javascript">
-
-</script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="scripts/jquery.js" type="text/javascript"></script>
 <script src="scripts/app.js" type="text/javascript"></script>
 
 </body>

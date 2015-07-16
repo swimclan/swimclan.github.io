@@ -329,8 +329,22 @@ nav li:nth-child(5) a {
     padding: 10px;
     background-color: $secondary-button-bg-color;
     border: 0;
+    border-top: 5px solid rgb(106, 117, 208);
+  }
+  button:first-child {
     border-top: 5px solid rgb(136, 147, 238);
   }
+}
+
+.tabs button:focus {
+  outline: none;
+}
+
+.mapblock {
+  height: 400px;
+  width: 635px;
+  margin: 0 auto 50px auto;
+
 }
 
 #mapCanvas {

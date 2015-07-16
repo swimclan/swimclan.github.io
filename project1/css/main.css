@@ -279,9 +279,21 @@ nav li:nth-child(5) a {
     padding: 10px;
     background-color: #45448f;
     border: 0;
+    border-top: 5px solid #6a75d0; }
+  #locations button:first-child {
     border-top: 5px solid #8893ee; }
-  #locations img {
-    width: 636px; }
+
+.tabs button:focus {
+  outline: none; }
+
+.mapblock {
+  height: 400px;
+  width: 635px;
+  margin: 0 auto 50px auto; }
+
+#mapCanvas {
+  height: 100%;
+  margin: 0; }
 
 #contact {
   background-color: #564eb3; }
@@ -306,6 +318,8 @@ nav li:nth-child(5) a {
       color: #f9f7f0;
       font-size: 1rem;
       margin-right: 5%; }
+    #contact .contact_form label:nth-child(3) {
+      margin-right: 0; }
   #contact #user_notes {
     height: 200px; }
 
