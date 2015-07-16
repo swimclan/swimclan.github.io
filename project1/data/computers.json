@@ -132,137 +132,476 @@
     "year": "1977",
     "system": "Heathkit H11"
   },
+  {
+    "year": "1978",
+    "system": "Bally Astrocade"
+  },
+  {
+    "year": "1978",
+    "system": "Netronics ELF II"
+  },
+  {
+    "year": "1978",
+    "system": "IBM 5110"
+  },
+  {
+    "year": "1978",
+    "system": "VideoBrain Family Computer"
+  },
+  {
+    "year": "1978",
+    "system": "Compucolor II"
+  },
+  {
+    "year": "1978",
+    "system": "Exidy Sorcerer"
+  },
+  {
+    "year": "1978",
+    "system": "Ohio Scientific"
+  },
+  {
+    "year": "1978",
+    "system": "Superboard II"
+  },
+  {
+    "year": "1978",
+    "system": "Synertek SYM-1"
+  },
+  {
+    "year": "1978",
+    "system": "Interact Model One"
+  },
+  {
+    "year": "1978",
+    "system": "Research Machines 380Z"
+  },
+  {
+    "year": "1978",
+    "system": "Magnavox Odyssey 2"
+  },
+  {
+    "year": "1978",
+    "system": "Cybervision 2001"
+  },
+  {
+    "year": "1978",
+    "system": "APF Imagination Machine"
+  },
+  {
+    "year": "1978",
+    "system": "Cromemco System 3"
+  },
+  {
+    "year": "1979",
+    "system": "Z80 Starter Kit"
+  },
+  {
+    "year": "1979",
+    "system": "TRS-80 model II"
+  },
+  {
+    "year": "1979",
+    "system": "Bell & Howell"
+  },
+  {
+    "year": "1979",
+    "system": "SwTPC S/09"
+  },
+  {
+    "year": "1979",
+    "system": "Heathkit H89"
+  },
+  {
+    "year": "1979",
+    "system": "Intertec SuperBrain"
+  },
+  {
+    "year": "1979",
+    "system": "Atari 400"
+  },
+  {
+    "year": "1979",
+    "system": "Atari 800"
+  },
+  {
+    "year": "1979",
+    "system": "TI-99/4"
+  },
+  {
+    "year": "1979",
+    "system": "Findex"
+  },
+  {
+    "year": "1979",
+    "system": "Sharp MZ 80K"
+  },
+  {
+    "year": "1980",
+    "system": "HP-85"
+  },
+  {
+    "year": "1980",
+    "system": "Micro Ace"
+  },
+  {
+    "year": "1980",
+    "system": "IBM 5120"
+  },
+  {
+    "year": "1980",
+    "system": "TRS-80 Color Computer"
+  },
+  {
+    "year": "1980",
+    "system": "TRS-80 model III"
+  },
+  {
+    "year": "1980",
+    "system": "TRS-80 Pocket Computer"
+  },
+  {
+    "year": "1980",
+    "system": "NNC 80W"
+  },
+  {
+    "year": "1980",
+    "system": "Sinclair ZX80"
+  },
+  {
+    "year": "1981",
+    "system": "Dynabyte 5100"
+  },
+  {
+    "year": "1981",
+    "system": "TFC 3450 By Fujitsu"
+  },
+  {
+    "year": "1981",
+    "system": "Commodore VIC-20"
+  },
+  {
+    "year": "1981",
+    "system": "Apple III"
+  },
+  {
+    "year": "1981",
+    "system": "Xerox 820"
+  },
+  {
+    "year": "1981",
+    "system": "Osborne 1"
+  },
+  {
+    "year": "1981",
+    "system": "Micro-Professor"
+  },
+  {
+    "year": "1981",
+    "system": "TI-99/4A"
+  },
+  {
+    "year": "1981",
+    "system": "IBM System/23"
+  },
+  {
+    "year": "1981",
+    "system": "IBM PC"
+  },
+  {
+    "year": "1981",
+    "system": "LNW-80"
+  },
+  {
+    "year": "1981",
+    "system": "Rockwell AIM 65/40"
+  },
+  {
+    "year": "1981",
+    "system": "BBC Micro"
+  },
+  {
+    "year": "1981",
+    "system": "NEC PC-6001A"
+  },
+  {
+    "year": "1982",
+    "system": "Timex Sinclair 1000"
+  },
+  {
+    "year": "1982",
+    "system": "Kaypro II"
+  },
+  {
+    "year": "1982",
+    "system": "Otrona Attache"
+  },
+  {
+    "year": "1982",
+    "system": "GRiD Compass 1101"
+  },
+  {
+    "year": "1982",
+    "system": "Victor 9000"
+  },
+  {
+    "year": "1982",
+    "system": "NEC APC"
+  },
+  {
+    "year": "1982",
+    "system": "SAGE II"
+  },
+  {
+    "year": "1982",
+    "system": "DEC Rainbow 100"
+  },
+  {
+    "year": "1982",
+    "system": "Sinclair ZX-Spectrum"
+  },
+  {
+    "year": "1982",
+    "system": "Lobo MAX-80"
+  },
+  {
+    "year": "1982",
+    "system": "Panasonic/Quasar HHC"
+  },
+  {
+    "year": "1982",
+    "system": "Franklin Ace 100"
+  },
+  {
+    "year": "1982",
+    "system": "Franklin Ace 1000"
+  },
+  {
+    "year": "1982",
+    "system": "HP-75C"
+  },
+  {
+    "year": "1982",
+    "system": "Commodore 64"
+  },
+  {
+    "year": "1982",
+    "system": "Commodore B128"
+  },
+  {
+    "year": "1982",
+    "system": "Toshiba T100"
+  },
+  {
+    "year": "1982",
+    "system": "Epson HX-20"
+  },
+  {
+    "year": "1982",
+    "system": "Zorba"
+  },
+  {
+    "year": "1983",
+    "system": "Dynalogic Hyperion"
+  },
+  {
+    "year": "1983",
+    "system": "Compaq Portable"
+  },
+  {
+    "year": "1983",
+    "system": "TI CC-40"
+  },
+  {
+    "year": "1983",
+    "system": "Jupiter Ace"
+  },
+  {
+    "year": "1983",
+    "system": "Apple Lisa"
+  },
+  {
+    "year": "1983",
+    "system": "TRS-80 model 100"
+  },
+  {
+    "year": "1983",
+    "system": "Kyotronic 85"
+  },
+  {
+    "year": "1983",
+    "system": "Olivetti M-10"
+  },
+  {
+    "year": "1983",
+    "system": "NEC PC-8201a"
+  },
+  {
+    "year": "1983",
+    "system": "Tomy Tutor"
+  },
+  {
+    "year": "1983",
+    "system": "Gavilan SC"
+  },
+  {
+    "year": "1983",
+    "system": "SAGE IV"
+  },
+  {
+    "year": "1983",
+    "system": "Altos 586"
+  },
+  {
+    "year": "1983",
+    "system": "Pied Piper"
+  },
+  {
+    "year": "1983",
+    "system": "Spectravideo CompuMate"
+  },
+  {
+    "year": "1983",
+    "system": "Mattel Aquarius"
+  },
+  {
+    "year": "1983",
+    "system": "Coleco Adam"
+  },
+  {
+    "year": "1983",
+    "system": "Timex Sinclair 1500"
+  },
+  {
+    "year": "1983",
+    "system": "TRS-80 MC-10"
+  },
+  {
+    "year": "1983",
+    "system": "Apple III Plus"
+  },
+  {
+    "year": "1983",
+    "system": "Visual Commuter"
+  },
+  {
+    "year": "1983",
+    "system": "TI Portable Professional"
+  },
+  {
+    "year": "1984",
+    "system": "Commodore SX-64"
+  },
+  {
+    "year": "1984",
+    "system": "Apple Macintosh"
+  },
+  {
+    "year": "1984",
+    "system": "Sinclair QL"
+  },
+  {
+    "year": "1984",
+    "system": "IBM Portable"
+  },
+  {
+    "year": "1984",
+    "system": "TRS-80 model 200"
+  },
+  {
+    "year": "1984",
+    "system": "Epson PX-8"
+  },
+  {
+    "year": "1984",
+    "system": "Ampro Little Board"
+  },
+  {
+    "year": "1984",
+    "system": "IBM PCjr"
+  },
+  {
+    "year": "1984",
+    "system": "Apple IIc"
+  },
+  {
+    "year": "1984",
+    "system": "Sord IS-11"
+  },
+  {
+    "year": "1984",
+    "system": "HP 110"
+  },
+  {
+    "year": "1984",
+    "system": "Amstrad CPC"
+  },
+  {
+    "year": "1984",
+    "system": "Tano Dragon"
+  },
+  {
+    "year": "1984",
+    "system": "Data General One"
+  },
+  {
+    "year": "1984",
+    "system": "Morrow Pivot"
+  },
+  {
+    "year": "1984",
+    "system": "Tandy 1000"
+  },
+  {
+    "year": "1984",
+    "system": "Sharp PC-5000"
+  },
+  {
+    "year": "1985",
+    "system": "Atari 520ST"
+  },
+  {
+    "year": "1985",
+    "system": "Franklin Ace 2000"
+  },
+  {
+    "year": "1985",
+    "system": "Franklin Ace 500"
+  },
+  {
+    "year": "1985",
+    "system": "Osborne Vixen"
+  },
+  {
+    "year": "1985",
+    "system": "Kaypro 2000"
+  },
+  {
+    "year": "1985",
+    "system": "Amiga 1000"
+  },
+  {
+    "year": "1985",
+    "system": "Zenith Z-171"
+  },
+  {
+    "year": "1985",
+    "system": "Sharp PC-7000"
+  },
+  {
+    "year": "1985",
+    "system": "AT&T UNIX PC"
+  },
+  {
+    "year": "1985",
+    "system": "Toshiba T1100"
+  },
+  {
+    "year": "1985",
+    "system": "Amstrad PCW"
+  },
 
 
-1978
-Bally Astrocade
-Netronics ELF II
-IBM 5110
-VideoBrain Family Computer
-Compucolor II
-Exidy Sorcerer
-Ohio Scientific
-Superboard II
-Synertek SYM-1
-Interact Model One
-Research Machines 380Z
-Magnavox Odyssey 2
-Cybervision 2001
-APF Imagination Machine
-Cromemco System 3
-1979
-Z80 Starter Kit
-TRS-80 model II
-Bell & Howell
-SwTPC S/09
-Heathkit H89
-
-Intertec SuperBrain
-Atari 400
-Atari 800
-TI-99/4
-Findex
-Sharp MZ 80K
-1980
-HP-85
-Micro Ace
-IBM 5120
-TRS-80 Color Computer
-TRS-80 model III
-TRS-80 Pocket Computer
-NNC 80W
-Sinclair ZX80
-1981
-Dynabyte 5100
-TFC 3450
-By Fujitsu
-Commodore VIC-20
-Sinclair ZX81
-Apple III
-Xerox 820
-Osborne 1
-Micro-Professor
-TI-99/4A
-IBM System/23
-IBM PC
-LNW-80
-Rockwell AIM 65/40
-BBC Micro
-NEC PC-6001A
-1982
-Timex Sinclair 1000
-Kaypro II
-Otrona Attache
-GRiD Compass 1101
-Victor 9000
-NEC APC
-SAGE II
-DEC Rainbow 100
-Sinclair ZX-Spectrum
-Lobo MAX-80
-Panasonic/
-Quasar HHC
-Franklin Ace 100
-Franklin Ace 1000
-HP-75C
-Commodore 64
-Commodore B128
-Toshiba T100
-Epson HX-20
-Zorba
-1983
-Dynalogic Hyperion
-Compaq Portable
-TI CC-40
-Jupiter Ace
-Apple Lisa
-TRS-80 model 100
-Kyotronic 85
-Olivetti M-10
-NEC PC-8201a
-Tomy Tutor
-Gavilan SC
-SAGE IV
-Altos 586
-Pied Piper
-Spectravideo CompuMate
-Mattel Aquarius
-Coleco Adam
-Timex Sinclair 1500
-TRS-80 MC-10
-Apple III Plus
-Visual Commuter
-TI Portable Professional
-1984
-Commodore SX-64
-Apple Macintosh
-Sinclair QL
-IBM Portable
-TRS-80 model 200
-Epson PX-8
-Ampro Little Board
-IBM PCjr
-Apple IIc
-Sord IS-11
-HP 110
-Amstrad CPC
-Tano Dragon
-Data General One
-Morrow Pivot
-Tandy 1000
-Sharp PC-5000
-1985
-Atari 520ST
-Franklin Ace 2000
-Franklin Ace 500
-Osborne Vixen
-Kaypro 2000
-Amiga 1000
-Zenith Z-171
-Sharp PC-7000
-AT&T UNIX PC
-Toshiba T1100
-Amstrad PCW
 1986
 Compaq Portable II
 IBM Convertible
