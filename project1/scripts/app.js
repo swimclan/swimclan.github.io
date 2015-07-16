@@ -34,7 +34,7 @@ $(document).ready(function() {
   app.markers = new Object();
 
   //render default map to Chicago
-  renderGoogleMap('chicago');
+  app.renderGoogleMap('chicago');
 
   //hide the marketing plugs
   $('.blurb p').hide();
@@ -122,19 +122,23 @@ $(document).ready(function() {
     $('.tabs button').css('border-top', '5px solid rgb(106, 117, 208)')
     $(this).css('border-top', '5px solid rgb(136, 147, 238)')
     //render the correct Google Map with Marker
-    renderGoogleMap(locale);
+    app.renderGoogleMap(locale);
   });
 
+  //if the user resizes the window make sure the we get the nav items back
   $(window).resize(function () {
-	if ($(window).width() >= 890) {
-		$('.nav-links').show();
-    app.mobileNav = false;
-	} else if ($(window).width() < 890) {
-    $('.nav-links').hide();
-    app.mobileNav = false;
-    $('.hamburger li').html('&equiv;')
-  }
-});
+  	if ($(window).width() >= 890) {
+  		$('.nav-links').show();
+      app.mobileNav = false;
+  	} else if ($(window).width() < 890) {
+      $('.nav-links').hide();
+      app.mobileNav = false;
+      $('.hamburger li').html('&equiv;')
+    }
+  });
+
+  //populate the 'choose system' dropdown from AJAX api call
+  app.getComputersList();
 
 });
 
@@ -200,7 +204,7 @@ app.typeDescription = function(msg) {
   });
 }
 
-function renderGoogleMap(location) {
+app.renderGoogleMap = function(location) {
   //draw first
   app.maps[location] = new google.maps.Map($('#mapCanvas')[0], app.mapOptions[location]);
 
@@ -212,4 +216,22 @@ function renderGoogleMap(location) {
 
   //set the marker on chicago location as default
   app.markers[location].setMap(app.maps[location]);
+}
+
+app.getComputersList = function() {
+  var ajaxData = {
+    url: 'data/computers.json',
+    type: 'GET',
+    dataType: 'json',
+    success: function(data) {
+      for (var item in data) {
+        console.log(data[item].system);
+        $('#computer_model').append('<option>' + data[item].system + '</option>');
+      }
+    },
+    error: function(err) {
+      console.log(err);
+    }
+  }
+  $.ajax(ajaxData);
 }
