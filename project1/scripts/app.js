@@ -5,6 +5,31 @@ $(document).ready(function() {
   //set mobile nav state to false (menu not mobile)
   app.mobileNav = false;
 
+  //setup Google Maps api
+  app.mapOptions = {
+    chicago: {
+      center: new google.maps.LatLng(37.78,  -122.987),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    losangeles: {
+      center: new google.maps.LatLng(37.78,  -122.987),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    lasvegas: {
+      center: new google.maps.LatLng(37.78,  -122.987),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    },
+    brooklyn: {
+      center: new google.maps.LatLng(37.78,  -122.987),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+  }
+  new google.maps.Map($('#mapCanvas')[0], app.mapOptions.chicago);
+
   //hide the marketing plugs
   $('.blurb p').hide();
   $('#passion').show();

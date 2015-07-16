@@ -331,9 +331,11 @@ nav li:nth-child(5) a {
     border: 0;
     border-top: 5px solid rgb(136, 147, 238);
   }
-  img {
-    width: 636px;
-  }
+}
+
+#mapCanvas {
+  height: 100%;
+  margin: 0;
 }
 
 #contact {
@@ -349,7 +351,7 @@ nav li:nth-child(5) a {
     box-shadow: 0 5px #444;
   }
   .contact_form {
-    width: 50%;
+    min-width: 500px;
     height: 60px;
     font-size: 1.5rem;
     margin: 10px auto;
@@ -363,6 +365,9 @@ nav li:nth-child(5) a {
       color: $site-off-white;
       font-size: 1rem;
       margin-right: 5%;
+    }
+    label:nth-child(3) {
+      margin-right: 0;
     }
 
   }
@@ -462,6 +467,7 @@ footer {
 
 @media (max-width: 730px) {
   .contact_form {
-    width: 100%;
+    min-width: 300px;
+    width: 90%;
   }
 }

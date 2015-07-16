@@ -293,7 +293,7 @@ nav li:nth-child(5) a {
     font-family: "Commodore Pixelized", serif;
     box-shadow: 0 5px #444; }
   #contact .contact_form {
-    width: 50%;
+    min-width: 500px;
     height: 60px;
     font-size: 1.5rem;
     margin: 10px auto;
@@ -384,6 +384,7 @@ footer {
       height: 300px; } }
 @media (max-width: 730px) {
   .contact_form {
-    width: 100%; } }
+    min-width: 300px;
+    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
