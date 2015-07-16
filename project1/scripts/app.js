@@ -93,12 +93,12 @@ $(document).ready(function() {
   //make the mobile nav work
   $('.hamburger li').on('click', function() {
     if (!app.mobileNav) {
-      $(this).css('top', '-430px');
+      $(this).css('top', '-427px');
       $('.nav-links').show();
       $(this).html('&times;');
       app.mobileNav = true;
     } else {
-      $(this).css('top', '-103px');
+      $(this).css('top', '-98px');
       $('.nav-links').hide();
       $(this).html('&equiv;');
       app.mobileNav =  false;
