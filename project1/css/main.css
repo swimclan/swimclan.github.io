@@ -411,7 +411,8 @@ footer {
     font-size: 1.2rem; }
 
   .hamburger li {
-    top: -97px; }
+    top: -78px;
+    font-size: 3.5rem; }
 
   #people {
     max-width: 100%; }
