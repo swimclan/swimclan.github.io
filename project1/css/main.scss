@@ -342,13 +342,14 @@ nav li:nth-child(5) a {
 
 .mapblock {
   height: 400px;
-  width: 635px;
+  max-width: 635px;
   margin: 0 auto 50px auto;
 
 }
 
 #mapCanvas {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -365,15 +366,17 @@ nav li:nth-child(5) a {
     box-shadow: 0 5px #444;
   }
   .contact_form {
-    min-width: 500px;
+    display: block;
+    width: 60%;
     height: 60px;
     font-size: 1.5rem;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 5px;
     border: 0;
     padding: 10px;
     input {
       margin: 5px;
+      display: block;
     }
     label {
       color: $site-off-white;
@@ -479,9 +482,91 @@ footer {
   }
 }
 
-@media (max-width: 730px) {
-  .contact_form {
-    min-width: 300px;
+@media (max-width: 700px) {
+  header #logo {
+    font-size: $heading1-phone;
+    margin-top: 25px;
+  }
+
+  h2 {
+    font-size: $heading2-phone;
+  }
+
+  h3 {
+    font-size: $heading3-phone;
+  }
+
+  .hamburger li {
+    top: -97px;
+  }
+
+  #people {
+    max-width: 100%;
+    .person img {
+      width: 100%;
+    }
+  }
+
+  .bios {
+    margin: 0;
+    width: 100%;
+    .bio {
+      width: 95%;
+      margin: 0 auto;
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  figure.project {
+    clear: both;
+    width: 100%;
+    margin-left: 25%;
+    img {
+      min-width: 100px;
+    }
+  }
+
+  #location {
+    height: 800px;
+  }
+
+  .imagestack {
+    margin: 0 0;
+    width: 100%;
+  }
+  .imgblock, {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+  }
+
+  #home {
+    height: 80%;
+  }
+
+  .blurb {
+    width: 100%;
+    p {
+      width: 100%;
+    }
+  }
+  .tabs {
+    width: 100%;
+  }
+
+  #locations button {
+    display: block;
+    width: 100%;
+  }
+
+  #mapCanvas {
+    height: 66%;
+  }
+
+  #contact .contact_form {
     width: 90%;
   }
 }

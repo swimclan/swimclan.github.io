@@ -220,13 +220,13 @@ app.renderGoogleMap = function(location) {
 
 app.getComputersList = function() {
   var ajaxData = {
-    url: 'data/computers.json',
+    url: 'http://swimclan.github.io/project1/data/computers.json',
     type: 'GET',
     dataType: 'json',
     success: function(data) {
       for (var item in data) {
         console.log(data[item].system);
-        $('#computer_model').append('<option>' + data[item].system + '</option>');
+        $('#computer_model').append('<option>' + data[item].system + ' (' + data[item].year + ')</option>');
       }
     },
     error: function(err) {

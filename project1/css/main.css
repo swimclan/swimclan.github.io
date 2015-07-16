@@ -288,11 +288,12 @@ nav li:nth-child(5) a {
 
 .mapblock {
   height: 400px;
-  width: 635px;
+  max-width: 635px;
   margin: 0 auto 50px auto; }
 
 #mapCanvas {
   height: 100%;
+  width: 100%;
   margin: 0; }
 
 #contact {
@@ -305,15 +306,17 @@ nav li:nth-child(5) a {
     font-family: "Commodore Pixelized", serif;
     box-shadow: 0 5px #444; }
   #contact .contact_form {
-    min-width: 500px;
+    display: block;
+    width: 60%;
     height: 60px;
     font-size: 1.5rem;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 5px;
     border: 0;
     padding: 10px; }
     #contact .contact_form input {
-      margin: 5px; }
+      margin: 5px;
+      display: block; }
     #contact .contact_form label {
       color: #f9f7f0;
       font-size: 1rem;
@@ -396,9 +399,73 @@ footer {
     .projectblock .project {
       width: 50%;
       height: 300px; } }
-@media (max-width: 730px) {
-  .contact_form {
-    min-width: 300px;
+@media (max-width: 700px) {
+  header #logo {
+    font-size: 1.2rem;
+    margin-top: 25px; }
+
+  h2 {
+    font-size: 1.5rem; }
+
+  h3 {
+    font-size: 1.2rem; }
+
+  .hamburger li {
+    top: -97px; }
+
+  #people {
+    max-width: 100%; }
+    #people .person img {
+      width: 100%; }
+
+  .bios {
+    margin: 0;
+    width: 100%; }
+    .bios .bio {
+      width: 95%;
+      margin: 0 auto; }
+      .bios .bio p {
+        width: 100%; }
+
+  figure.project {
+    clear: both;
+    width: 100%;
+    margin-left: 25%; }
+    figure.project img {
+      min-width: 100px; }
+
+  #location {
+    height: 800px; }
+
+  .imagestack {
+    margin: 0 0;
+    width: 100%; }
+
+  .imgblock {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px; }
+
+  #home {
+    height: 80%; }
+
+  .blurb {
+    width: 100%; }
+    .blurb p {
+      width: 100%; }
+
+  .tabs {
+    width: 100%; }
+
+  #locations button {
+    display: block;
+    width: 100%; }
+
+  #mapCanvas {
+    height: 66%; }
+
+  #contact .contact_form {
     width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
