@@ -100,6 +100,11 @@ nav {
   color: $navigation-links;
   text-decoration: none;
   vertical-align: middle;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: $navigation-links-hover;
 }
 
 nav li {
@@ -364,32 +369,38 @@ nav li:nth-child(5) a {
   button {
     font-family: $heading-font;
     box-shadow: 0 5px #444;
+    height: 60px;
+    border-radius: 5px;
+    width: 40%;
+    font-size: $major-button-text;
+    margin-top: 20px;
   }
+
   .contact_form {
+    background-color: white;
     display: block;
-    width: 60%;
+    width: 50%;
     height: 60px;
     font-size: 1.5rem;
     margin: 0px auto;
     border-radius: 5px;
     border: 0;
     padding: 10px;
-    input {
-      margin: 5px;
-      display: block;
+    .radio {
+      margin: 10px;
     }
-    label {
-      color: $site-off-white;
-      font-size: 1rem;
-      margin-right: 5%;
-    }
-    label:nth-child(3) {
-      margin-right: 0;
-    }
-
   }
+
   #user_notes {
     height: 200px;
+  }
+}
+
+#contact .contact_form {
+  text-align: left;
+  height: 60px;
+  label {
+    font-size: $label;
   }
 }
 
@@ -462,14 +473,14 @@ footer {
     border-radius: 0;
     a {
       color: $site-off-white;
-      font-size: $navigation-links;
+      font-size: $nav;
     }
   }
   .bios {
     width: 70%;
   }
 
-  figure:nth-child(3) {
+  figure:nth-child(2) {
     clear: left;
   }
 
@@ -501,6 +512,14 @@ footer {
     margin-right: 10px;
   }
 
+  nav {
+    font-size: $nav;
+  }
+
+  .nav-links li:nth-child(5) {
+    font-size: $nav;
+  }
+
   #people {
     max-width: 100%;
     .person img {
@@ -520,13 +539,14 @@ footer {
     }
   }
 
-  figure.project {
+  .projectblock .project {
     clear: both;
     width: 100%;
-    margin-left: 25%;
-    img {
-      min-width: 100px;
-    }
+    height: 230px;
+  }
+
+  .description {
+    border-width: thick;
   }
 
   #location {
@@ -568,6 +588,10 @@ footer {
   }
 
   #contact .contact_form {
+    width: 90%;
+  }
+
+  #contact button {
     width: 90%;
   }
 }

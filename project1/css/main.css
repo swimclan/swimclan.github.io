@@ -83,7 +83,11 @@ nav {
 .nav-links a {
   color: gainsboro;
   text-decoration: none;
-  vertical-align: middle; }
+  vertical-align: middle;
+  transition: color 0.2s; }
+
+.nav-links a:hover {
+  color: #fafafa; }
 
 nav li {
   float: left;
@@ -215,7 +219,7 @@ nav li:nth-child(5) a {
   width: 25%; }
   .project figcaption {
     color: #454545;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin-bottom: 50px; }
 
 .description {
@@ -304,27 +308,32 @@ nav li:nth-child(5) a {
     color: #f6f6f6; }
   #contact button {
     font-family: "Commodore Pixelized", serif;
-    box-shadow: 0 5px #444; }
+    box-shadow: 0 5px #444;
+    height: 60px;
+    border-radius: 5px;
+    width: 40%;
+    font-size: 1.5rem;
+    margin-top: 20px; }
   #contact .contact_form {
+    background-color: white;
     display: block;
-    width: 60%;
+    width: 50%;
     height: 60px;
     font-size: 1.5rem;
     margin: 0px auto;
     border-radius: 5px;
     border: 0;
     padding: 10px; }
-    #contact .contact_form input {
-      margin: 5px;
-      display: block; }
-    #contact .contact_form label {
-      color: #f9f7f0;
-      font-size: 1rem;
-      margin-right: 5%; }
-    #contact .contact_form label:nth-child(3) {
-      margin-right: 0; }
+    #contact .contact_form .radio {
+      margin: 10px; }
   #contact #user_notes {
     height: 200px; }
+
+#contact .contact_form {
+  text-align: left;
+  height: 60px; }
+  #contact .contact_form label {
+    font-size: 1.2rem; }
 
 footer {
   background-color: black;
@@ -386,12 +395,12 @@ footer {
     border-radius: 0; }
     .nav-links li:nth-child(5) a {
       color: #f9f7f0;
-      font-size: gainsboro; }
+      font-size: 1.2rem; }
 
   .bios {
     width: 70%; }
 
-  figure:nth-child(3) {
+  figure:nth-child(2) {
     clear: left; }
 
   .projectblock {
@@ -414,6 +423,12 @@ footer {
     top: -97px;
     margin-right: 10px; }
 
+  nav {
+    font-size: 1.2rem; }
+
+  .nav-links li:nth-child(5) {
+    font-size: 1.2rem; }
+
   #people {
     max-width: 100%; }
     #people .person img {
@@ -428,12 +443,13 @@ footer {
       .bios .bio p {
         width: 100%; }
 
-  figure.project {
+  .projectblock .project {
     clear: both;
     width: 100%;
-    margin-left: 25%; }
-    figure.project img {
-      min-width: 100px; }
+    height: 230px; }
+
+  .description {
+    border-width: thick; }
 
   #location {
     height: 800px; }
@@ -467,6 +483,9 @@ footer {
     height: 66%; }
 
   #contact .contact_form {
+    width: 90%; }
+
+  #contact button {
     width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */

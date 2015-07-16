@@ -70,15 +70,15 @@ $(document).ready(function() {
     $('#' + $thisID).fadeIn(400);
   });
 
-  //auto scroll down from the nav items
+  //auto scroll down from nav
   $('nav a').on('click', function(e) {
     var navHeight = $('header').height();
-  	e.preventDefault();
-  	linkTo = this.hash;
-  	var scrollToHash = $(linkTo).offset().top - navHeight;
-  	$('html, body').animate({
-  		scrollTop: scrollToHash
-  	}, 600, 'swing');
+    e.preventDefault();
+    linkTo = this.hash;
+    var scrollToHash = $(linkTo).offset().top - navHeight;
+    $('html, body').animate({
+      scrollTop: scrollToHash
+    }, 600, 'swing');
   });
 
   //on click of the employees, show their bio
@@ -200,7 +200,7 @@ app.typeDescription = function(msg) {
           //we add the letter to the container
           $('.description .typer').html($('.description .typer').html() + letter);
 
-      }, 50 * i);
+      }, 20 * i);
   });
 }
 

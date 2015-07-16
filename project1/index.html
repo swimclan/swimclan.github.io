@@ -110,6 +110,21 @@
         Check out some of the projects we have worked on that made us the best!
       </p>
       <article class="projectblock clearfix">
+        <article class="description">
+          <span class="typer">Click a project below and read about the process and the outcome!</span><span class="blink_me" id="cursor">&block;</span>
+          <p id="rockwell">
+            The Rockwell was the most insane project we ever did!  We spent over 12 months taking this bad boy arat and it still wasn't complete.  We had to bring the big guns in on this project because there weren't any parts available for it.  Tracey Patterson came in and used her historical knowledge of the product to locate the right parts that were critical to the success of the restoration.  The final machine went to the Rockell Digital compture museum  in Johnson Tennessee
+          </p>
+          <p id="tandy">
+            One of the greatest vintage computers of all time!  The Radio shack Tandy product line was, in its day, one of the greatest personal home computers ever built.  It was so good that it sold over 3.5 million units!  This restoration was fairly straightforward and only took us 3 months to complete.  Most of the parts were still available via the catelogs and the electrical engineering sites that exist all over the place.  Tracey Patterson got us the final information about where to get the right power supply.  This unit went back to its private owner, Steve Wozniak.
+          </p>
+          <p id="osborne">
+            The Osborne is truly the very first laptop ever built.  It was made for extremely rich businessmen who absolutely needed to be able to terminal into their VAX connections while on the road, in a car train or plane.  Finding parts for this machine was next to impossible and we almost abandoned the project.  Steve Reynolds, our technical director had to fly to Japan to get his hands on the processor heat sinks that needed to be fit onto the logic board.  It was almost a lost cause until he paid off a couple flight attendants to masquerade as his wife and daughter which made the Japanese parts distributor people very happy.  The unit lives on at the Smithsonian Institute for Retired Technology.
+          </p>
+          <p id="piedpiper">
+            When we first saw the Pied Piper commuicator (or what was left of it!) we were all thinking this was a practical joke.  Everyone in the office is a huge Silicon Valley&trade; fan!  The restoration project took us over 6 months because the keys were all missing and it needed a new screen buffer module (thats right, the screen used its own memory and processor!).  Steve Reynold stepped in to make sure the parts were the correct ones because he had a friend who had one in high school and he remembers building it even though he forgot what the name of the system was.  The final product was shipped back the original owner in Tuscon, AZ.
+          </p>
+        </article>
         <figure class="project" data-make="rockwell">
           <img src="images/rockwell_aim_65.jpg" alt="" /><br>
           <figcaption>Rockwell AIM 65</figcaption>
@@ -126,21 +141,6 @@
           <img src="images/pied_piper.jpg" alt="" /><br>
           <figcaption>Pied Piper Communicator 1</figcaption>
         </figure>
-        <article class="description">
-          <span class="typer">Click a project and read about the process and the outcome!</span><span class="blink_me" id="cursor">&block;</span>
-          <p id="rockwell">
-            The Rockwell was the most insane project we ever did!  We spent over 12 months taking this bad boy arat and it still wasn't complete.  We had to bring the big guns in on this project because there weren't any parts available for it.  Tracey Patterson came in and used her historical knowledge of the product to locate the right parts that were critical to the success of the restoration.  The final machine went to the Rockell Digital compture museum  in Johnson Tennessee
-          </p>
-          <p id="tandy">
-            One of the greatest vintage computers of all time!  The Radio shack Tandy product line was, in its day, one of the greatest personal home computers ever built.  It was so good that it sold over 3.5 million units!  This restoration was fairly straightforward and only took us 3 months to complete.  Most of the parts were still available via the catelogs and the electrical engineering sites that exist all over the place.  Tracey Patterson got us the final information about where to get the right power supply.  This unit went back to its private owner, Steve Wozniak.
-          </p>
-          <p id="osborne">
-            The Osborne is truly the very first laptop ever built.  It was made for extremely rich businessmen who absolutely needed to be able to terminal into their VAX connections while on the road, in a car train or plane.  Finding parts for this machine was next to impossible and we almost abandoned the project.  Steve Reynolds, our technical director had to fly to Japan to get his hands on the processor heat sinks that needed to be fit onto the logic board.  It was almost a lost cause until he paid off a couple flight attendants to masquerade as his wife and daughter which made the Japanese parts distributor people very happy.  The unit lives on at the Smithsonian Institute for Retired Technology.
-          </p>
-          <p id="piedpiper">
-            When we first saw the Pied Piper commuicator (or what was left of it!) we were all thinking this was a practical joke.  Everyone in the office is a huge Silicon Valley&trade; fan!  The restoration project took us over 6 months because the keys were all missing and it needed a new screen buffer module (thats right, the screen used its own memory and processor!).  Steve Reynold stepped in to make sure the parts were the correct ones because he had a friend who had one in high school and he remembers building it even though he forgot what the name of the system was.  The final product was shipped back the original owner in Tuscon, AZ.
-          </p>
-        </article>
       </article>
 
 
@@ -174,11 +174,11 @@
       </select><br>
       <textarea id="user_notes" class="contact_form" name="name" rows="8" cols="40" placeholder="Additional Information"></textarea><br>
       <fieldset id="interests" class="contact_form">
-        <input id="user_repair" type="radio" name="interest" value=""><label for="user_repair">Repairs</label>
-        <input id="user_restoration" type="radio" name="interest" value=""><label for="user_restoration">Full Restoration</label>
-        <input id="user_rebuild" type="radio" name="interest" value=""><label for="user_rebuild">Software Rebuild</label>
+        <label for="user_repair"><input id="user_repair" class="radio" type="radio" name="interest" value="">Repairs</label>
+        <label for="user_restoration"><input id="user_restoration" class="radio"  type="radio" name="interest" value="">Full Restoration</label>
+        <label for="user_rebuild"><input id="user_rebuild" class="radio"  type="radio" name="interest" value="">Software Rebuild</label>
       </fieldset>
-      <button id="form_send" class="contact_form" type="submit" name="button">Get Started!</button>
+      <button id="form_send" type="submit" name="button">Get Started!</button>
       <div class="loading">
         <img src="images/spinner.gif" alt="" />
       </div>
