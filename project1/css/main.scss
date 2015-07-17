@@ -368,6 +368,8 @@ nav li:nth-child(5) a {
   }
   button {
     font-family: $heading-font;
+    background-color: $primary-button-bg-color;
+    border: 0;
     box-shadow: 0 5px #444;
     height: 60px;
     border-radius: 5px;
