@@ -386,6 +386,14 @@ nav li:nth-child(5) a {
     border-radius: 5px;
     border: 0;
     padding: 10px;
+  }
+  fieldset {
+    text-align: left;
+    width: 50%;
+    height: 120px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: white;
     .radio {
       margin: 10px;
     }
@@ -588,6 +596,10 @@ footer {
   }
 
   #contact .contact_form {
+    width: 90%;
+  }
+
+  #contact fieldset {
     width: 90%;
   }
 
