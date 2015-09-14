@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> <!-- Character encoding for the HTML document. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Tells Internet Explorer it should use the latest, or edge, version of the IE rendering environment. -->
+
+    <title></title>
+    <meta name="description" content=""><!-- Description, often used as 'snippet' by search engines. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Will make sure your site scales properly for mobile http://goo.gl/teFgfK-->
+
+    <!-- <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> Site icon that appears next to the title in tab -->
+
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Normalize.css makes browsers render all elements more consistently and in line with modern standards http://goo.gl/2trj5P-->
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+        <h1>Contact Us!</h1>
+
+    <fieldset id="personal_info">
+      <h3>Personal Information</h3>
+      <label for="user_name">Name: </label><input id="user_name" type="text" name="name" value="" placeholder="What is your name?" />
+      <label for="user_email">Email: </label><input id="user_email" type="email" name="name" value="" placeholder="you@somewhere.net" />
+    </fieldset>
+    <fieldset id="inquiry">
+      <h3>Inquiry</h3>
+      <label for="user_request"></label><textarea id="user_request" name="name" rows="8" cols="40" placeholder="What are you inquiring about?"></textarea>
+    </fieldset>
+    <fieldset id="systems">
+      <p>
+        Please indicate what systems you have owned in the past:
+      </p>
+      <input id="user_system_IBM" type="checkbox" name="IBM" value="" /><label for="">IBM</label><br>
+      <input id="user_system_Commodore" type="checkbox" name="Commodore" value="" /><label for="">Commodore</label><br>
+      <input id="user_system_Radioshack" type="checkbox" name="Radioshack" value="" /><label for="">Radioshack (Tandy)</label><br>
+      <input id="user_system_Rockwell" type="checkbox" name="Rockwell" value="" /><label for="">Rockwell</label><br>
+      <input id="user_system_Apple" type="checkbox" name="Apple" value="" /><label for="">Apple</label><br>
+      <input id="user_system_RCA" type="checkbox" name="RCA" value="" /><label for="">RCA</label><br>
+      <input id="user_system_Intel" type="checkbox" name="Intel" value="" /><label for="">Intel</label><br>
+      <input id="user_system_Atari" type="checkbox" name="Atari" value="" /><label for="">Atari</label><br>
+      <input id="user_system_Amiga" type="checkbox" name="Amiga" value="" /><label for="">Amiga</label><br>
+      <input id="user_system_Bell_Howell" type="checkbox" name="Bell &amp; Howell" value="" /><label for="">Bell &amp; Howell</label><br>
+      <input id="user_system_Osborne" type="checkbox" name="Osborne" value="" /><label for="">Osborne</label><br>
+      <input id="user_system_Xerox" type="checkbox" name="Xerox" value="" /><label for="">Xerox</label><br>
+      <input id="user_system_Zenith" type="checkbox" name="Zenith" value="" /><label for="">Zenith</label><br>
+      <input id="user_system_Data_General" type="checkbox" name="Zenith" value="" /><label for="">Data General</label><br>
+      <label for="user_system_other">Other: </label><input id="user_system_other" type="text" name="name" value="">
+    </fieldset>
+    <fieldset>
+      <p>
+        Sign up for newsletters about vintage computers and rebuild projects?
+      </p>
+    <input id="user_opt_in" type="checkbox" name="opt-in" value="" checked><label for="user_opt_in">Yes!</label>
+    </fieldset>
+      <input id="form_send" type="submit" name="submit" value="Contact us now!" />
+
+<div class="loading">
+  <img src="images/spinner.gif" alt="" />
+</div>
+<div class="success">
+  <h2>Your message was successfully sent!</h2>
+</div>
+<div class="error">
+  <h2>There as an error seding...</h2>
+</div>
+
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<script src="scripts/app.js" type="text/javascript"></script>
+</body>
+</html>

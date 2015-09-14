@@ -1,12 +1,14 @@
 # Site settings
-title: Your awesome portfolio
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your portfolio here!
+title: Matt Herron
+email: matthew.herron77@gmail.com
+description: >
+  Matt Herron is a creative professional and business developer that fuses product and technology development to rapidly concieve,
+  test and prototype product ideas for any industry.  This is a portfolio of example projects that demonstrate some of these prototyping 
+  case studies.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://you.github.io" # the base hostname & protocol for your site
-twitter_username: youontwitter
-github_username:  youongithub
+url: "https://swimclan.github.io" # the base hostname & protocol for your site
+twitter_username: swimclan
+github_username:  swimclan
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,47 @@
+--------------------------------------------------------------
+FONT SIZES
+--------------------------------------------------------------
+
+Logo / Heading fonts: Commodore Pixelized v1.2
+
+body / button / caption fonts: Open-Sans
+
+Body font size: 16px
+
+Site Heading: 250%
+
+Section headings: 240%
+
+Navigation links: 150%
+
+Article Headings: 125%
+
+Figure captions, footer legends: 75%
+
+Form field placeholders: 150%
+
+Major Button Text: 150%
+
+Minor button text: 100%
+
+--------------------------------------------------------------
+SITE COLORS
+--------------------------------------------------------------
+Primary site color: rgb(86, 78, 179)
+
+Primary button bg color: rgb(78, 79, 61)
+Primary button font color: rgb(34, 34, 26)
+
+Secondary button bg color: rgb(69, 68, 143)
+Secondary button: rgb(90, 90, 102)
+
+body font: rgb(34, 34, 34)
+body font light: rgb(229, 229, 229)
+
+Site headings - light: rgb(246, 246, 246)
+
+Site headings - dark: rgb(40, 40, 40)
+
+Navigation links: rgb(179, 179, 179)
+
+Figure captions: rgb(69, 69, 69)

@@ -1,14 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome portfolio</title>
-    <description>Write an awesome description for your portfolio here!
+    <title>Matt Herron</title>
+    <description>Matt Herron is a creative professional and business developer that fuses product and technology development to rapidly concieve, test and prototype product ideas for any industry.  This is a portfolio of example projects that demonstrate some of these prototyping  case studies.
 </description>
-    <link>https://you.github.io/</link>
-    <atom:link href="https://you.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Sep 2015 10:34:02 -0500</pubDate>
-    <lastBuildDate>Mon, 14 Sep 2015 10:34:02 -0500</lastBuildDate>
+    <link>https://swimclan.github.io/</link>
+    <atom:link href="https://swimclan.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 14 Sep 2015 11:27:03 -0500</pubDate>
+    <lastBuildDate>Mon, 14 Sep 2015 11:27:03 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hash#Track</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://danieldoesitall.com/wp-content/uploads/2011/10/shutters.jpg&quot; alt=&quot;http://danieldoesitall.com/wp-content/uploads/2011/10/shutters.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-of-project&quot;&gt;Summary of Project&lt;/h2&gt;
+&lt;p&gt;This was a project to experiment with external APIs and various other things&lt;/p&gt;
+
+&lt;h2 id=&quot;project-images&quot;&gt;Project Images&lt;/h2&gt;
+
+&lt;sceenshots to=&quot;&quot; be=&quot;&quot; taken=&quot;&quot; here=&quot;&quot;&gt;
+
+## Summary of Technologies Used
+
+- HTML
+- CSS
+- Javascript
+
+## Live website
+
+*Add a link to the website only if it is live on the web.  Don&#39;t add a link to something that isnt live.*
+&lt;/sceenshots&gt;
+</description>
+        <pubDate>Fri, 14 Aug 2015 05:53:07 -0500</pubDate>
+        <link>https://swimclan.github.io/twitter/social/media/apps/hashtags/marketing/2015/08/14/project-4.html</link>
+        <guid isPermaLink="true">https://swimclan.github.io/twitter/social/media/apps/hashtags/marketing/2015/08/14/project-4.html</guid>
+        
+        
+        <category>twitter</category>
+        
+        <category>social</category>
+        
+        <category>media</category>
+        
+        <category>apps</category>
+        
+        <category>hashtags</category>
+        
+        <category>marketing</category>
+        
+      </item>
+    
+      <item>
+        <title>4K Restoration</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://images.complex.com/complex/image/upload/t_article_image/wm8cg2clxqmmdcyyvmol.jpg&quot; alt=&quot;http://images.complex.com/complex/image/upload/t_article_image/wm8cg2clxqmmdcyyvmol.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summary-of-project&quot;&gt;Summary of Project&lt;/h2&gt;
+&lt;p&gt;4K restoration is a project that conceptualizes a fictitious company that restores and repairs vintage computers.  The website was intended to demonstrate capabilities using technologies like HTML, CSS(3), JavaScript and jQuery.  There are several instances of jQuery animate and usage of asynchronous JS to simulate typing on the screen from a vintage computer terminal.&lt;/p&gt;
+
+&lt;h2 id=&quot;project-images&quot;&gt;Project Images&lt;/h2&gt;
+
+&lt;will add=&quot;&quot; the=&quot;&quot; images=&quot;&quot;&gt;
+
+## Summary of Technologies Used
+
+- HTML
+- CSS
+- Javascript
+- jQuery
+- Responsive design
+
+## Live website
+
+[Link to the live website](http://swimclan.github.io/project1)
+&lt;/will&gt;
+</description>
+        <pubDate>Fri, 24 Jul 2015 05:00:00 -0500</pubDate>
+        <link>https://swimclan.github.io/vintage/computers/throwback/2015/07/24/project-1.html</link>
+        <guid isPermaLink="true">https://swimclan.github.io/vintage/computers/throwback/2015/07/24/project-1.html</guid>
+        
+        
+        <category>vintage</category>
+        
+        <category>computers</category>
+        
+        <category>throwback</category>
+        
+      </item>
     
       <item>
         <title>Your portfolio</title>
@@ -17,8 +95,8 @@
 &lt;p&gt;Add some &lt;em&gt;content&lt;/em&gt; and &lt;strong&gt;awesomeness&lt;/strong&gt; using &lt;code&gt;markdown&lt;/code&gt;!&lt;/p&gt;
 </description>
         <pubDate>Fri, 05 Jun 2015 05:34:07 -0500</pubDate>
-        <link>https://you.github.io/portfolio/update/2015/06/05/portfolio.html</link>
-        <guid isPermaLink="true">https://you.github.io/portfolio/update/2015/06/05/portfolio.html</guid>
+        <link>https://swimclan.github.io/portfolio/update/2015/06/05/portfolio.html</link>
+        <guid isPermaLink="true">https://swimclan.github.io/portfolio/update/2015/06/05/portfolio.html</guid>
         
         
         <category>portfolio</category>
@@ -45,8 +123,8 @@
 
 </description>
         <pubDate>Mon, 01 Jun 2015 05:34:07 -0500</pubDate>
-        <link>https://you.github.io/jekyll/update/2015/06/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://you.github.io/jekyll/update/2015/06/01/welcome-to-jekyll.html</guid>
+        <link>https://swimclan.github.io/jekyll/update/2015/06/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://swimclan.github.io/jekyll/update/2015/06/01/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
