@@ -1,19 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>The webpage of all that is good</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>
-      This is a page that demonstrate that I know how to use a computer and also can put a webpage on my computer.
-    </p>
-    <p>
-      I will one day rule the computer world with my capabilities and my dreams and my aspirations.
-    </p>
-    <p>
-      I will no longer do stuff that is not cool.  I will only partake in stuff that rocks.  I dream about rocking.
-    </p>
-  </body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Projects</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.description | date: "%b %-d, %Y" }}</span>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
