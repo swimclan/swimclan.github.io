@@ -1,10 +1,212 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sea Turtle Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      /* Base styles */
+      body {
+        margin: 0;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        background: linear-gradient(to bottom, #b3ecff, #e6f9ff);
+        color: #033e4a;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 8px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Hero image */
+      .hero {
+        margin: 24px 0 40px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .hero img {
+        width: 100%;
+        display: block;
+      }
+
+      /* Section styling */
+      section {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 32px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: #006b7d;
+      }
+
+      /* Book list */
+      .book-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .book-list li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px;
+        margin-bottom: 12px;
+        background: #f0fbff;
+        border-radius: 12px;
+        transition:
+          transform 0.2s,
+          background 0.2s;
+      }
+
+      .book-list li:hover {
+        background: #d9f5ff;
+        transform: translateY(-2px);
+      }
+
+      .book-list img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 12px;
+        flex-shrink: 0;
+      }
+
+      .book-list a {
+        font-size: 1.1rem;
+        color: #004d5a;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .book-list a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.95rem;
+        color: #04515f;
+      }
+
+      /* Small screens */
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        .book-list li {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
+
   <body>
-    Hello Mila! You are amazing! and you are my daughter
+    <div class="container">
+      <header>
+        <h1>🌊 Sea Turtle Adventures 🐢</h1>
+        <p>
+          Welcome! This page is full of wonderful books about sea turtles —
+          where they live, how they grow, and why they’re so special. Click a
+          book below to explore!
+        </p>
+      </header>
+
+      <div class="hero">
+        <img
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+          alt="Ocean with sunlight shining through the water"
+        />
+      </div>
+
+      <section>
+        <h2>📚 Books About Sea Turtles</h2>
+        <ul class="book-list">
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7"
+              alt="Sea turtle swimming"
+            />
+            <a
+              href="https://www.amazon.com/Sea-Turtles-Gail-Gibbons/dp/0823412597"
+              target="_blank"
+            >
+              Sea Turtles — by Gail Gibbons
+            </a>
+          </li>
+
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1593352216898-0d80c7b7d8e1"
+              alt="Sea turtle underwater"
+            />
+            <a
+              href="https://www.amazon.com/Turtle-Turtle-Nicola-Davies/dp/0763660497"
+              target="_blank"
+            >
+              Turtle, Turtle — by Nicola Davies
+            </a>
+          </li>
+
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1552083375-1447ce886485"
+              alt="Sea turtle near coral reef"
+            />
+            <a
+              href="https://www.amazon.com/One-Tiny-Turtle-Nicola-Davies/dp/0763660683"
+              target="_blank"
+            >
+              One Tiny Turtle — by Nicola Davies
+            </a>
+          </li>
+
+          <li>
+            <img
+              src="https://images.unsplash.com/photo-1518837695005-2083093ee35b"
+              alt="Sea turtle gliding through the ocean"
+            />
+            <a
+              href="https://www.amazon.com/Hello-World-Sea-Turtles/dp/0593173875"
+              target="_blank"
+            >
+              Hello, World! Sea Turtles
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <footer>Made with love for a curious ocean explorer 💙</footer>
+    </div>
   </body>
 </html>
